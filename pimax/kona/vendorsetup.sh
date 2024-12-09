@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_kona-user
-add_lunch_combo omni_kona-userdebug
-add_lunch_combo omni_kona-eng
+add_lunch_combo twrp_kona-user
+add_lunch_combo twrp_kona-userdebug
+add_lunch_combo twrp_kona-eng
