@@ -8,7 +8,8 @@ This device tree was generated using twrpdtgen, it was used to build the twrp in
 
 ## Pimax portal retro TWRP
 
-Pretty simple to install, disclaimer : i did not test with pre/already rooted rom, so i advise unrooting first
+Pretty simple to install, 
+disclaimer : i did not test with pre/already rooted rom, so i advise unrooting first
 
 download latest TWRP image from :
 https://github.com/hmajdouli/pimax_portal_retro_twrp_device_tree_twrpdtgen/releases
@@ -36,6 +37,21 @@ Now swipe and reboot to recovery, you need to do 2 things :
 ## Root
 
 Go to https://magisk.zip/ and download magisk zip and apk, then flash the zip using TWRP and install the apk after reboot
+
+## Install GSI Rom
+
+disclaimer : fan is not working when flashing GSI roms, hopefully someone clever than me will figure this out
+
+```
+adb reboot fastboot
+fastboot flash system_a your_GSI_rom.img (i suppose your active slot is A)
+fastboot erase userdata
+fastboot -w
+```
+Then swipe and reboot to recovery (dont reboot to system yet)
+Decrypt data partition, wipe any other partiton that has failed to mount (you will see messages in the wipe logs)
+Flash Permissiver.zip (see https://github.com/hmajdouli/pimax_portal_retro_twrp_device_tree_twrpdtgen/releases)
+Reboot to system, your GSI rom should boot
 
 ## Something bad happened
 
