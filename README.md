@@ -11,6 +11,8 @@ This device tree was generated using twrpdtgen, it was used to build the twrp in
 Pretty simple to install, 
 disclaimer : i did not test with pre/already rooted rom, so i advise unrooting first
 
+**Make sure you have a micro SD card  inserted and formated as portable before you begin**
+
 download latest TWRP image from :
 https://github.com/hmajdouli/pimax_portal_retro_twrp_device_tree_twrpdtgen/releases
 
